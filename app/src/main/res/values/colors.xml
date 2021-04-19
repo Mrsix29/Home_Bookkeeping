@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="background_color">#FFFBE6</color>
+    <color name="grey_7D7D7D">#7D7D7D</color>
+    <color name="white">#FFF</color>
+    <color name="record_btn">#FD5523</color>
+    <color name="more_btn">#008577</color>
+    <color name="background_color_monthly_summary">#B9E4C9</color>
+    <color name="income">#356859</color>
+    <color name="balance">#442C2E</color>
+    <color name="chart_view">#FD5523</color>
+</resources>

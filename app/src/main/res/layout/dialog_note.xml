@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/background_color">
+    <TextView
+        android:id="@+id/dialog_note_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_note"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/dialog_note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_note_text_view"
+        android:hint="@string/note_hint"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:background="@color/white">
+        <requestFocus/>
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/dialog_note_edit_text"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/dialog_note_button_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_btn_bg"
+            android:text="@string/cancel"
+            android:textColor="@color/record_btn"
+            android:textStyle="bold"
+            app:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/dialog_note_button_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/main_record_btn_bg"
+            android:text="@string/save"
+            android:textColor="@color/more_btn"
+            android:textStyle="bold"
+            app:backgroundTint="@color/record_btn"/>
+    </LinearLayout>
+</RelativeLayout>

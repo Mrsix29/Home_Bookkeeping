@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_monthly_summary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly_expenses" />
+
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_expense_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/monthly_summary_main_text_view_expense"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="$0.00"
+            android:textColor="@color/record_btn"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/monthly_summary_main_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_show"
+            android:layout_alignTop="@id/monthly_summary_main_text_view_expense_cost"/>
+
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly_income"
+            android:layout_below="@id/monthly_summary_main_text_view_expense_cost"/>
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_income_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/income"
+            android:text="$0.00"
+            android:layout_below="@id/monthly_summary_main_text_view_expense_cost"
+            android:layout_toRightOf="@id/monthly_summary_main_text_view_income"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_balance_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/monthly_summary_main_text_view_income_cost"
+            android:layout_marginLeft="5dp"
+            android:textColor="#DC7070"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/balance"
+            android:layout_toLeftOf="@id/monthly_summary_main_text_view_balance_cost"
+            android:layout_alignBottom="@id/monthly_summary_main_text_view_income"/>
+        <TextView
+            android:id="@+id/monthly_summary_main_text_view_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_chart"
+            android:layout_below="@id/monthly_summary_main_text_view_income"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/monthly_chart_view"
+            android:textColor="@color/chart_view"
+            android:drawablePadding="10dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/monthly_summary_main_text_view_today"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today  Expenses $0.00  Income $0.00"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/record_btn"/>
+</LinearLayout>
